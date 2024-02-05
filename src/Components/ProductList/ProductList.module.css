@@ -1,0 +1,19 @@
+.productList {
+    display: flex;
+    justify-content: center;
+}
+
+.productList ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 650px));
+    row-gap: 2em;
+    column-gap: 1em;
+    padding: 2rem;
+}
+
+@media (max-width: 800px) {
+    .productList ul {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+    }
+}

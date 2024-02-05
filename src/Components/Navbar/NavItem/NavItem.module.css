@@ -1,0 +1,18 @@
+.active,
+.noActive {
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 40px;
+    width: calc(100%/3);
+}
+
+.active {
+    background-color: white;
+}
+.active a,
+.noActive a{
+    display: block;
+    line-height: 40px;
+    text-align: center;
+}

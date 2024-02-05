@@ -1,0 +1,117 @@
+.blurEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.6);
+    backdrop-filter: blur(12px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.blurEffect:hover {
+    opacity: 1;
+}
+
+span {
+    transform: translate(-15px, 15px);
+    transition: transform 0.5s ease;
+}
+
+.blurEffect:hover span {
+    transform: translate(0);
+}
+
+.ready,
+.not-ready {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ready p,
+.ready span {
+    margin: 1em 2em;
+    font-size: 1em;
+    line-height: 40px;
+}
+
+.ready span {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.ready p {
+    color: white;
+}
+
+.not-ready p:first-child {
+    margin: 1.2em 0 0 2em;
+    color: white;
+    font-size: 1em;
+}
+
+.not-ready .des p:last-child {
+    font-size: 1em;
+    color: #8e8e8e;
+    margin: 0 0 0 2rem;
+}
+
+.not-ready span {
+    margin: 1rem 2rem 0 0;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+@media (max-width: 800px) {
+    .blurEffect {
+        position: static;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(0);
+    }
+
+    span {
+        transform: translate(0);
+    }
+
+    .ready p {
+        color: black;
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    .ready span, .not-ready span {
+        display: none;
+    }
+
+    .not-ready .des {
+        display: flex;
+    }
+
+    .not-ready p:first-child {
+        color: black;
+        margin: 0;
+        line-height: 40px;
+    }
+
+    .not-ready p:last-child {
+        color: black;
+        margin: 0;
+        line-height: 40px;
+
+    }
+
+
+}
