@@ -1,0 +1,24 @@
+.profilePic {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+    gap: 1.2em;
+    place-content: center;
+    margin-bottom: 150px;
+}
+
+.pic1,
+.pic2 {
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    aspect-ratio: 3/2.5;
+    border-radius: 15px;
+}
+
+.pic1 {
+    background-image: url('https://framerusercontent.com/images/wJINOk3BFAbQRx6ZySXfbltPxU.jpg?scale-down-to=1024');
+}
+
+.pic2 {
+    background-image: url('https://framerusercontent.com/images/O3Foxt0XkzTsjGc74Ap0Hrxtz4c.jpg?scale-down-to=1024');
+}
