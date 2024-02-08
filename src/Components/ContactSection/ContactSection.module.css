@@ -1,0 +1,40 @@
+.contactSection {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.slogan {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slogan p {
+    font-size: 4.4em;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.slogan a {
+    color: #7f7f7f;
+}
+
+.slogan a:hover {
+    color: #b8b4b4;
+}
+
+@media (max-width: 1200px) and (min-width: 801px) {
+    .slogan p {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 800px) {
+    .slogan p {
+        font-size: 1.8em;
+    }
+}
