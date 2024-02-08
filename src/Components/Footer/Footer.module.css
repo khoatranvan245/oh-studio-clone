@@ -1,31 +1,36 @@
-.footer{
+.footer {
     margin: 10em 3em 2em 3em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-content: space-between;
 }
 
-.socialLinks ul{
+.socialLinks ul {
     display: flex;
     gap: 1em;
     justify-content: flex-end;
 }
 
-.logo, .socialLinks ul li a{
+.logo,
+.socialLinks ul li a {
     font-size: 0.8em;
 }
 
-@media (max-width: 800px){
-    .footer{
+.socialLinks ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+    .footer {
         margin-bottom: 6em;
     }
-    .logo{
+
+    .logo {
         text-align: center;
         width: 100%;
     }
 
-    .socialLinks ul{
+    .socialLinks ul {
         justify-content: center;
     }
 }
-

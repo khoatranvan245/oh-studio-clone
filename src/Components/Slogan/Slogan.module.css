@@ -1,4 +1,4 @@
-.slogan{
+.slogan {
     margin: 8rem auto;
     width: 30%;
 }
@@ -9,29 +9,30 @@
     line-height: 1.3em;
 }
 
-.slogan a{
+.slogan a {
     color: #7f7f7f;
 }
 
-.slogan a:hover{
-    color: #9e9e9e;
+.slogan a:hover {
+    color: #b8b4b4;
 }
 
-@media (max-width: 1023px) and (min-width: 740px){
-    .slogan{
+@media (max-width: 1023px) and (min-width: 740px) {
+    .slogan {
         width: 70%;
     }
 
-    .slogan p{
+    .slogan p {
         font-size: 2.1em;
     }
 }
 
-@media (max-width: 739px){
-    .slogan{
+@media (max-width: 739px) {
+    .slogan {
         width: 80%;
     }
-    .slogan p{
+
+    .slogan p {
         font-size: 1.8em;
-    } 
+    }
 }

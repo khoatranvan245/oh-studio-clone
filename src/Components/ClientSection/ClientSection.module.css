@@ -1,0 +1,32 @@
+.clientLogos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-auto-rows: 200px;
+    margin: 0 3em;
+}
+
+.clientLogos li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img {
+    filter: invert(100%);
+    width: 60%;
+    aspect-ratio: 1.4375 / 1;
+    object-fit: cover;
+    object-position: center center;
+}
+
+li:nth-child(11) img {
+    filter: none;
+}
+
+@media (max-width: 900px) {
+    .clientLogos {
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+}
