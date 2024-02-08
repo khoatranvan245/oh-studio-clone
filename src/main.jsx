@@ -6,10 +6,10 @@ import GlobalStyles from './GlobalStyles/GlobalStyles.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GlobalStyles>
-      <BrowserRouter>
+    <BrowserRouter>
+      <GlobalStyles>
         <App />
-      </BrowserRouter>
-    </GlobalStyles>
+      </GlobalStyles>
+    </BrowserRouter>
   </React.StrictMode>
 )

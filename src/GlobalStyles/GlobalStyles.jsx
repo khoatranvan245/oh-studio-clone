@@ -1,7 +1,6 @@
-import styles from './GlobalStyles.module.css'
-
-const GlobalStyles = ({children}) => {
-    return children;
+import './GlobalStyles.css'
+const GlobalStyles = ({ children }) => {
+  return children
 }
 
 export default GlobalStyles
