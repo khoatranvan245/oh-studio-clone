@@ -12,7 +12,7 @@
 
 }
 
-img {
+.clientLogos li img {
     filter: invert(100%);
     width: 60%;
     aspect-ratio: 1.4375 / 1;
@@ -20,7 +20,7 @@ img {
     object-position: center center;
 }
 
-li:nth-child(11) img {
+.clientLogos li:nth-child(11) img {
     filter: none;
 }
 

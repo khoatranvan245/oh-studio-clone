@@ -12,23 +12,23 @@
     align-items: center;
 }
 
-li p:first-child,
-li p:nth-child(3) {
+.pastJobsList li p:first-child,
+.pastJobsList li p:nth-child(3) {
     color: #a7a7a7;
     font-size: 0.8rem;
 }
 
-li p:nth-child(2) {
+.pastJobsList li p:nth-child(2) {
     margin: 17px 0;
     font-size: 1.5rem;
 }
 
-li p:last-child {
+.pastJobsList li p:last-child {
     margin-top: 17px;
 }
 
 @media (max-width: 1024px) {
-    li p:nth-child(2) {
+    .pastJobsList li p:nth-child(2) {
         font-size: 1.2rem;
     }
 }
