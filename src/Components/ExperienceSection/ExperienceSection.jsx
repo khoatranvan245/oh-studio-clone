@@ -70,10 +70,14 @@ const pastJobs = [
 
 const ExperienceSection = () => {
   return (
-    <section>
+    <section className='animated first'>
       <p className="token">Experience</p>
-      <p className="sectionDescription">Where I've worked</p>
-      <ul className={styles.pastJobsList}>
+      <p className="sectionDescription">
+        Where I've worked
+      </p>
+      <ul
+        className={styles.pastJobsList}
+      >
         {pastJobs.map((job, id) => {
           return (
             <li key={id}>

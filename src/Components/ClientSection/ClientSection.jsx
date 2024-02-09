@@ -2,7 +2,7 @@ import styles from './ClientSection.module.css'
 
 const ClientSection = () => {
   return (
-    <section>
+    <section className='animated first'>
       <p className="token">Clients</p>
       <p className="sectionDescription">Who I've worked with</p>
       <ul className={styles.clientLogos}>

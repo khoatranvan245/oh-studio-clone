@@ -5,8 +5,8 @@ const ContactSection = () => {
   return (
     <div className={styles.contactSection}>
       <div className={styles.slogan}>
-        <p>Let's work together</p>
-        <p>
+        <p className="animated first">Let's work together</p>
+        <p className="animated second">
           <a href="">Get in touch</a>
         </p>
       </div>

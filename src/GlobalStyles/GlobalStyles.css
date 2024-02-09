@@ -27,3 +27,34 @@ section {
     font-size: 2.2rem;
     margin: 0 0 1em 0;
 }
+
+.popUp1,
+.popUp2,
+.popUp3,
+.popUp4 {
+    animation: popUp 0.7s ease;
+}
+
+.popUp2 {
+    animation: popUp 1s ease;
+}
+
+.popUp3 {
+    animation: popUp 1.3s ease;
+}
+
+.popUp4 {
+    animation: popUp 1.6s ease;
+}
+
+@keyframes popUp {
+    from {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

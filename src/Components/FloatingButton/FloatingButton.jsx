@@ -2,10 +2,17 @@ import styles from './FloatingButton.module.css'
 
 const FloatingButton = () => {
   return (
-    <a className={styles.floatingButton}>
-      <div className={styles.logo}></div>
-      <p>Shop</p>
-    </a>
+    <div className={styles.buttonWrapper}>
+      <a
+        className={[styles.floatingButton, 'animated', 'fourth'].join(
+          ' '
+        )}
+        href=""
+      >
+        <div className={styles.logo}></div>
+        <p>Shop</p>
+      </a>
+    </div>
   )
 }
 

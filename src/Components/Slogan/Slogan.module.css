@@ -1,6 +1,9 @@
 .slogan {
-    margin: 8rem auto;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8em;
 }
 
 .slogan p {
