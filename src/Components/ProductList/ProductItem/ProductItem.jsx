@@ -1,9 +1,8 @@
 import BlurEffect from './BlurEffect'
 import styles from './ProductItem.module.css'
 
-const ProductItem = ({ id, name, status, demo }) => {
-  const imgSrc = 'src\\assets\\pic' + id + '.webp'
-  const videoSrc = 'src\\assets\\pic' + id + '.mp4'
+const ProductItem = ({ id, name, status, demo, src }) => {
+  
 
   return (
     <div className={styles.item}>
@@ -11,10 +10,10 @@ const ProductItem = ({ id, name, status, demo }) => {
         {status == 'ready' ? (
           <a href="">
             {demo == 'img' ? (
-              <img src={imgSrc} />
+              <img src={src} />
             ) : (
               <video
-                src={videoSrc}
+                src={src}
                 autoPlay
                 muted
                 loop
@@ -29,10 +28,10 @@ const ProductItem = ({ id, name, status, demo }) => {
         ) : (
           <a>
             {demo == 'img' ? (
-              <img src={imgSrc} />
+              <img src={src} />
             ) : (
               <video
-                src={videoSrc}
+                src={src}
                 autoPlay
                 muted
                 loop
